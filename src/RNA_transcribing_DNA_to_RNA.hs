@@ -7,6 +7,7 @@
 transcribe :: String -> String
 transcribe xs = map replace xs
   where
+    replace :: Char -> Char
     replace x
       | x == 'T' = 'U'
       | otherwise = x
